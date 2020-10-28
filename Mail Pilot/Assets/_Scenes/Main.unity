@@ -584,6 +584,11 @@ PrefabInstance:
       propertyPath: gameController
       value: 
       objectReference: {fileID: 2019295050}
+    - target: {fileID: 1611093553563445789, guid: 887c5bee811983a4cb06f9ea66643b36,
+        type: 3}
+      propertyPath: bulletPoolManager
+      value: 
+      objectReference: {fileID: 154382891}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 887c5bee811983a4cb06f9ea66643b36, type: 3}
 --- !u!1001 &6258031004616284574

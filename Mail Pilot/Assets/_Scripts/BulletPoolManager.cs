@@ -36,15 +36,14 @@ public class BulletPoolManager : MonoBehaviour
         GameObject temp;
 
         //finding bullet within queue and using it if not active
-        for (int i = 0; i < BulletPoolSize(); i++)
+  
+        if (!EmptyPool())
         {
-            if (!EmptyPool())
-            {
-                temp = bulletPool.Dequeue();
-                temp.SetActive(true);
-                return temp;
-            }
+            temp = bulletPool.Dequeue();
+            temp.SetActive(true);
+            return temp;
         }
+        
 
         //expanding the pool to accomodate for more bullets if needed and will return the new bullet
         if (expandPool)
@@ -89,7 +88,7 @@ public class BulletPoolManager : MonoBehaviour
     //checks if pool is empty
     public bool EmptyPool()
     {
-        if (BulletPoolSize() == 0)
+        if (BulletPoolSize() <= 0)
         {
             return true;
         }

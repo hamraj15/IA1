@@ -9,7 +9,7 @@ public class BulletController : MonoBehaviour
     public Boundary boundary;
 
     //create a reference to the BulletPoolManager
-    private BulletPoolManager bulletPoolManager;
+    public BulletPoolManager bulletPoolManager;
 
     void Start()
     {
